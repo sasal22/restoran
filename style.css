@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.context{
+    background: white;
+    text-align: center;
+    position: relative;
+}
+.context h6{
+    color: #222;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 200;
+}
+.context p{
+    color: #000;
+    font-size: 11px;
+    font-style: normal;
+     font-weight: 200;
+}
+
