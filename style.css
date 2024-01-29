@@ -2,6 +2,114 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    list-style: none;
+}
+.bais_but{
+    width: 40px;
+    height: 1px;
+    background: black;
+    position: relative;
+}
+.bais_but::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    top: 9px;
+}
+.bais_but::before{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    top: -9px;
+}
+header{
+    padding: 60px 20px;
+}
+.bais{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bais li:first-child{
+    color: var(--Accent, #D1A954);
+text-align: center;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.65px;
+text-transform: uppercase;
+}
+.bais li:nth-child(2){
+    color: var(--Accent, #D1A954);
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.65px;
+text-transform: uppercase;
+}
+.bais li{
+    color: #000;
+font-size: 13px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 0.65px;
+text-transform: uppercase;
+}
+.bais ul{
+    display: flex;
+    column-gap: 15px;
+}
+.bais img{
+    width: 160px;
+    height: 87px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    width: 1300px;
 }
 .context{
     background: white;
