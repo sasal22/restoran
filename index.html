@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,11 +22,45 @@
                     <li>МЕРОПРИЯТИЯ</li>
                     <li>ТУРИСТАМ</li>
                 </ul>
-                <div class="bais_but"></div> 
+                <div class="bais_but"></div>
             </div>
         </div>
     </header>
     <main>
+        <section class="baisal">
+            <div class="container">
+                
+
+                
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="baisal_box">
+                        <div class="baisal_box_box">
+                            <h2>КОРПАРИТИВЫ</h2>
+                            <p>Отметьте лучший праздник
+                                в лучшем дворце Бишкека!</p>
+                        </div>
+                    </div></div>
+                      <div class="swiper-slide"><div class="baisal_box2">
+                        <div class="baisal_box_box">
+                            <h2>СВАДЬБЫ</h2>
+                            <p>Отметьте лучший праздник
+                                в лучшем дворце Бишкека!</p>
+                        </div>
+                    </div></div>
+                      <div class="swiper-slide"><div class="baisal_box3">
+                        <div class="baisal_box_box">
+                            <h2>ЗВАНЬЕ ВЕЧЕРА</h2>
+                            <p>Отметьте лучший праздник
+                                в лучшем дворце Бишкека!</p>
+                        </div>
+                    </div></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+        </section>
         <section class="izat">
             <div class="container">
                 <div class="context">
@@ -37,6 +73,18 @@
             </div>
             </div>
         </section>
+        
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: true,
+            
+          },
+          loop: true,
+        });
+      </script>
 </body>
 </html>
