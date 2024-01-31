@@ -72,7 +72,51 @@ text-transform: uppercase;
     width: 160px;
     height: 87px;
 }
+.img2{
+width: 920px;
+height: 479px;
+position: relative;
+}
+.img3{
+width: 80px;
+height: 80px;
+position: absolute;
+left: 47.3%;
+bottom: 37%;
+}
+.izat2{
+width: 350px;
+height: 205px;
+}
+.izat2 p {
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+}
+.welcome {
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img4 {
+margin: 20px;
+}
+.welcome2{
+    
+}
+.welcome2_2 {
+display: flex;
+}
+.img5 {
+    margin: 20px;
+}
+.welcome2_2 p{
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
 
+}
 
 
 
