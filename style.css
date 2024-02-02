@@ -6,18 +6,18 @@
     
 }
 .container{
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
-.bais_but {
+.burger__btn {
     width: 40px;
     height: 1px;
     background: black;
     position: relative;
 }
 
-.bais_but::after {
+.burger__btn::after {
     content: '';
     display: block;
     width: 40px;
@@ -27,7 +27,7 @@
     top: 9px;
 }
 
-.bais_but::before {
+.burger__btn::before {
     content: '';
     display: block;
     width: 40px;
@@ -78,11 +78,12 @@ header {
     text-transform: uppercase;
 }
 
-.bais ul {
+
+.burger {
     display: flex;
     column-gap: 15px;
-}
 
+}
 .baisal_box{
     background: url(/restoran/image/Rectangle\ 2.png);
     width: 580px;
@@ -128,7 +129,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 135%; 
 }
-.baisal_box_box::after{
+.baisal_box_box:after{
     content: "";
     position: absolute;
     width: 550px;
@@ -351,4 +352,84 @@ column-gap: 10px;
 }
 h1{
     text-align: center;
+}
+
+
+
+
+@media(max-width: 768px) {
+  .bais ul {
+    display: none;
+  }
+  .burger{
+    display: none;
+}
+.burger.active{
+    display: flex;
+    height: 100vh;
+    background: #80808090;
+    position: fixed;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    right: 0;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.header__box ul{
+    flex-direction: column;
+    row-gap: 40px;
+    
+}
+.header__box li{
+    font-size: 20px;
+    font-weight: 800;
+}
+.burger__btn{
+    width: 40px;
+    height: 4px;
+    background: #E08631;
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    transition: 1s;
+
+}
+.burger__btn::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: #E08631;
+    display: block;
+    top: -10px;
+    transition: 1s;
+
+}
+.burger__btn::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: #E08631;
+    display: block;
+    top: 10px;
+    transition: 1s;
+
+}
+.burger__btn.active{
+    background: none;
+}
+.burger__btn.active::after{
+    transform: rotate(-45deg);
+    top: 0;
+    transition: 1s;
+}
+.burger__btn.active::before{
+    transform: rotate(45deg);
+    top: 0;
+    transform: 1s;
+}
 }

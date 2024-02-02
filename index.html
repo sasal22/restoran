@@ -19,17 +19,18 @@
         <div class="container">
             <div class="bais">
                 <img src="image/logo (2).png" alt="">
-                <ul>
+                <ul class="burger">
                     <li>Главная </li>
                     <li>SOFIT EVENT HOUSE</li>
                     <li>МЕРОПРИЯТИЯ</li>
                     <li>ТУРИСТАМ</li>
                 </ul>
-                <div class="bais_but"></div>
+                <div onclick="toggleBurger()" class="burger__btn"></div>
             </div>
         </div>
     </header>
     <main>
+        
         <section class="baisal">
             <div class="container">
             
@@ -62,7 +63,9 @@
                   </div>
             </div>
         </section>
+
         <section class="izat">
+
         <section class="izat1">
             <div class="container">
                 <div class="context">
@@ -74,7 +77,8 @@
                 <img class="img3" src="image/play-button.png" alt="" srcset="">
         </div>
         </div>
-            </section>
+        </section>
+
             <section class="izat2">
                 <div class="container">
                 <div class="welcome">
@@ -125,20 +129,11 @@
             </div>
             </div>
         </div>
-            </section>
+            </section> -->
+
             <section class="gallery" >
-<img class="img6" src="image/gallery.png" alt="" srcset="">
+                <img class="img6" src="image/gallery.png" alt="" srcset="">
             </section>
-
-
-
-
-
-
-
-
-
-
 
         <section class="speciality" id="speciality">
             <h1 class="heading"><span>Our</span> Gallery </h1>
@@ -207,7 +202,9 @@
 
             </div>
         </section>
+    
     </main>
+
     <footer>
         <div class="container">
         
@@ -215,7 +212,7 @@
       </footer>
 
 
-      
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -226,6 +223,13 @@
           },
           loop: true,
         });
+        let burger = document.querySelector('.burger')
+let burgerBtn = document.querySelector(".burger__btn")
+console.log('fdhfgh');
+let toggleBurger = ()=>{
+    burger.classList.toggle('active')
+    burgerBtn.classList.toggle('active')
+}
       </script>
 
 </body>
