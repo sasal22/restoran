@@ -113,6 +113,9 @@ font-weight: 300;
 .img4 {
 margin: 20px;
 }
+.welcome2{
+  margin: 30px;
+}
 .welcome2_2 {
 display: flex;
 column-gap: 10px;
@@ -120,6 +123,9 @@ column-gap: 10px;
 .welcome3_3 {
   display: flex;
   column-gap: 15px;
+}
+.welcome4 {
+  margin: 30px;
 }
 .welcome4_4 {
   display: flex;
@@ -137,18 +143,7 @@ column-gap: 10px;
   
   align-items: center;
 }
-.welcome22 {
-  row-gap: 50px;
-}
-.welcome33 {
-  row-gap: 50px;
-}
-.speciality {
-  margin: 200px;
-}
-.welcome22 {
-  row-gap: 200px;
-}
+
 .gallery {
   margin: 200px;
   color: white;
@@ -156,6 +151,9 @@ column-gap: 10px;
 .img6 {
   width: 900px;
   height: 600px;
+}
+.speciality {
+  margin: 200px;
 }
 
 
