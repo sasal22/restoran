@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,94 +19,115 @@
         <div class="container">
             <div class="bais">
                 <img src="image/logo (2).png" alt="">
-                <ul>
+                <ul class="burger">
                     <li>Главная </li>
                     <li>SOFIT EVENT HOUSE</li>
                     <li>МЕРОПРИЯТИЯ</li>
                     <li>ТУРИСТАМ</li>
                 </ul>
-                <div class="bais_but"></div>
+                <div onclick="toggleBurger()" class="burger__btn"></div>
             </div>
         </div>
     </header>
-    <main>
+   
+        <section class="baisal">
+            <div class="container">
+            
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="baisal_box">
+                        <div class="baisal_box_box">
+                            <h2>КОРПАРИТИВЫ</h2>
+                            <p>Отметьте лучший праздник
+                                в лучшем дворце Бишкека!</p>
+                        </div>
+                    </div></div>
+                      <div class="swiper-slide"><div class="baisal_box2">
+                        <div class="baisal_box_box">
+                            <h2>СВАДЬБЫ</h2>
+                            <p>Отметьте лучший праздник
+                                в лучшем дворце Бишкека!</p>
+                        </div>
+                    </div></div>
+                      <div class="swiper-slide"><div class="baisal_box3">
+                        <div class="baisal_box_box">
+                            <h2>ЗВАНЬЕ ВЕЧЕРА</h2>
+                            <p>Отметьте лучший праздник
+                                в лучшем дворце Бишкека!</p>
+                        </div>
+                    </div></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+        </section>
         <section class="izat1">
             <div class="container">
                 <div class="context">
 
                 <h6>О РЕСТОРАНЕ</h6>
-                <img class="img1" src="image/descr1.png" srcset="">
+                <img class="img1" src="image/descr1 (1).png" srcset="">
                 <p>летний дворец</p>
                 <img class="img2" src="image/Rectangle 2.png" alt="" srcset="">
                 <img class="img3" src="image/play-button.png" alt="" srcset="">
         </div>
         </div>
-            </section>
-            <section class="izat2">
-                <div class="container">
-                <div class="welcome">
-                    <div class="welcome1_1">
-                <img class="img4" src="image/logo_big.svg" alt="" srcset="">
-                <p>
-                    Добро пожаловать в Летний Дворец! <br><br>
-                    Всего в 12 километрах от Петербурга, <br> неподалеку от знаменитых фонтанов и парков <br> Петергофа воплощен в жизнь один из самых <br> грандиозных проектов event-индустрии России <br> – ресторанный комплекс «Летний Дворец». <br> Открытый в 2009 году, он объединил под одной <br> крышей современный банкетный зал в <br> исторических дворцовых интерьерах на 800 <br> гостей и собственный кейтеринг.
-                </p>
+        </section>
+        <section class="izat2">
+            <div class="container">
+            <div class="welcome">
+                <div class="welcome1_1">
+            <img class="img4" src="image/logo_big.svg" alt="" srcset="">
+            <p>
+                Добро пожаловать в Летний Дворец! <br><br>
+                Всего в 12 километрах от Петербурга, <br> неподалеку от знаменитых фонтанов и парков <br> Петергофа воплощен в жизнь один из самых <br> грандиозных проектов event-индустрии России <br> – ресторанный комплекс «Летний Дворец». <br> Открытый в 2009 году, он объединил под одной <br> крышей современный банкетный зал в <br> исторических дворцовых интерьерах на 800 <br> гостей и собственный кейтеринг.
+            </p>
+        </div>
+        <div class="welcome22">
+            <div class="welcome2">  
+                <div class="welcome2_2">   
+             <img class="img5" src="image/descr1 (1).png" alt="" srcset="">
+             <p>площадка</p>
+            </div> 
+             <p>Сочетание классических <br> интерьеров и современных <br> технических возможностей <br> выгодно отличают Летний Дворец <br> от большинства других <br> исторических площадок города.</p>
+            </div> 
+            <div class="welcome3">
+            <div class="welcome3_3">
+           <img src="image/descr3.png" alt="" srcset="">
+            <p>технологии</p>
             </div>
-            <div class="welcome22">
-                <div class="welcome2">  
-                    <div class="welcome2_2">   
-                 <img class="img5" src="image/descr1.png" alt="" srcset="">
-                 <p>площадка</p>
-                </div> 
-                 <p>Сочетание классических <br> интерьеров и современных <br> технических возможностей <br> выгодно отличают Летний Дворец <br> от большинства других <br> исторических площадок города.</p>
-                </div> 
-                <div class="welcome3">
-                <div class="welcome3_3">
-               <img src="image/descr3.png" alt="" srcset="">
-                <p>технологии</p>
+            <p>
+                Возможности «Летнего Дворца» <br> практически безграничны с точки <br> зрения проведения мероприятий <br> самого разного формата и <br>  масштаба.
+            </p>
+            </div> 
+        </div>
+        <div class="welcome33">
+            <div class="welcome4">
+                <div class="welcome4_4">
+                    <img src="image/descr2.png" alt="" srcset="">
+                    <p>интерьеры</p>
                 </div>
                 <p>
-                    Возможности «Летнего Дворца» <br> практически безграничны с точки <br> зрения проведения мероприятий <br> самого разного формата и <br>  масштаба.
+                    Изысканное внутреннее <br> убранство Летнего Дворца <br> — тонко выполненная стилизация с <br> использованием традиционных <br> технологий и материалов <br> — мрамора, бронзового литья.
                 </p>
-                </div> 
             </div>
-            <div class="welcome33">
-                <div class="welcome4">
-                    <div class="welcome4_4">
-                        <img src="image/descr2.png" alt="" srcset="">
-                        <p>интерьеры</p>
-                    </div>
-                    <p>
-                        Изысканное внутреннее <br> убранство Летнего Дворца <br> — тонко выполненная стилизация с <br> использованием традиционных <br> технологий и материалов <br> — мрамора, бронзового литья.
-                    </p>
+            <div class="welcome5">
+                <div class="welcome5_5">
+                    <img src="image/descr4.png" alt="" srcset="">
+                    <p>оборудование</p>
                 </div>
-                <div class="welcome5">
-                    <div class="welcome5_5">
-                        <img src="image/descr4.png" alt="" srcset="">
-                        <p>оборудование</p>
-                    </div>
-                    <p>
-                        Установлен комплект самого <br> современного звукового <br> оборудования, который приятно <br> удивит даже знатока <br> качественного звука.
-                    </p>
-                </div>
-            </div>
+                <p>
+                    Установлен комплект самого <br> современного звукового <br> оборудования, который приятно <br> удивит даже знатока <br> качественного звука.
+                </p>
             </div>
         </div>
-            </section>
-            <section class="gallery" >
-<img class="img6" src="image/gallery.png" alt="" srcset="">
-            </section>
-
-
-
-
-
-
-
-
-
-
-
+        </div>
+    </div>
+        </section> 
+        <section class="gallery" >
+            <img class="img6" src="image/gallery.png" alt="" srcset="">
+        </section>
         <section class="speciality" id="speciality">
             <h1 class="heading"><span>Our</span> Gallery </h1>
             <div class="main-box-speciality">
@@ -172,7 +195,34 @@
 
             </div>
         </section>
-    </main>
+
+    <footer>
+        <div class="container">
+        
+        </div>
+      </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: true,
+            
+          },
+          loop: true,
+        });
+        let burger = document.querySelector('.burger')
+let burgerBtn = document.querySelector(".burger__btn")
+console.log('fdhfgh');
+let toggleBurger = ()=>{
+    burger.classList.toggle('active')
+    burgerBtn.classList.toggle('active')
+}
+      </script>
+
 </body>
 
 </html>
